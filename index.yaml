@@ -4,6 +4,37 @@ entries:
   - annotations:
       artifacthub.io/category: database
       artifacthub.io/changes: |
+        - kind: added
+          description: Update Qdrant to v1.7.0
+        - kind: fixed
+          description: Fix snapshot restoration
+          links:
+              - name: Github Issue
+                url: https://github.com/qdrant/qdrant-helm/pull/96
+    apiVersion: v2
+    appVersion: v1.7.0
+    created: "2023-12-08T14:44:49.334183334Z"
+    description: Qdrant - Vector Database for the next generation of AI applications.
+    digest: 6ea9f94e900b33a1f3bf9144ba864e97503d5fc0859394692e939956bb075a7b
+    home: https://qdrant.tech
+    icon: https://qdrant.github.io/qdrant-helm/logo_with_text.svg
+    keywords:
+    - vector database
+    maintainers:
+    - email: info@qdrant.com
+      name: qdrant
+      url: https://github.com/qdrant
+    name: qdrant
+    sources:
+    - https://github.com/qdrant/qdrant
+    - https://github.com/qdrant/qdrant-helm
+    type: application
+    urls:
+    - https://github.com/locustbaby/qdrant-helm/releases/download/qdrant-0.7.0/qdrant-0.7.0.tgz
+    version: 0.7.0
+  - annotations:
+      artifacthub.io/category: database
+      artifacthub.io/changes: |
         - kind: fixed
           description: Ensure that the qdrant-init-file-path is on a writable, ephemeral volume
           links:
@@ -142,4 +173,4 @@ entries:
     urls:
     - https://qdrant.github.io/qdrant-helm/qdrant-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-17T14:47:04.187047704Z"
+generated: "2023-12-08T14:44:49.334286015Z"
